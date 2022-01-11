@@ -1,3 +1,15 @@
 body {
-  background-color: bisque;
+  border-top: 20px solid #101010;
+  border-bottom: 20px solid #101010;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  max-width: 500px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: solid 2px #c0c0c0;
 }
