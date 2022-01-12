@@ -1,7 +1,5 @@
 import _ from 'lodash';
 import './style.css';
+import Todo from './Todo.js';
                  
-
-window.onload = () {
-  const list = new Todo
-}
+const list = new Todo

@@ -19,6 +19,10 @@ export default class Todo {
 
   }
 
+  move()  {
+    
+  }
+
   display() {
 
   }
