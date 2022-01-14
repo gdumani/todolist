@@ -1,59 +1,61 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# TODO LIST
 
-> One paragraph statement about the project.
+> "TODO List is simple task organizer written in javascript and using Webpack.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Html/CSS
+- Javascript
+- Webpack
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- Webpack setup
+- linters: Eslint,, Stylint, Hint
 ### Setup
-
-### Install
-
+```bash
+git clone https://github.com/gdumani/todolist.git
+cd todolist
+git checkout development
+```
+### Install Dependencies
+```bash
+npm install
+```
 ### Usage
-
+```bash
+npm run start
+```
 ### Run tests
 
-### Deployment
+```bash
+npx stylelint "**/*.{css,scss}"
+```
 
+```bash
+npx hint --telemetry=off .
+```
 
 
 ## Authors
 
-👤 **Author1**
+**Giancarlo Dumani**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@gdumani](https://github.com/gdumani)
+- Twitter: [@gdumani1](https://twitter.com/gdumani1)
+- LinkedIn: [ Giancarlo-Dumani](https://www.linkedin.com/in/gdumani/?originalSubdomain=cr)
 
 ## 🤝 Contributing
 
