@@ -26,7 +26,9 @@ To get a local copy up and running follow these simple example steps.
 - linters: Eslint,, Stylint, Hint
 ### Setup
 ```bash
-git clone https://github.com/gdumani/todolist/tree/development
+git clone https://github.com/gdumani/todolist.git
+cd todolist
+git checkout development
 ```
 ### Install Dependencies
 ```bash
