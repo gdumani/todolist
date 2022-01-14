@@ -10,18 +10,17 @@ body {
 input {
   border: none;
   padding: 0;
-  margin:inherit;
+  margin: inherit;
   width: 94%;
 }
 
 .listLine {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 10px;
   border-bottom: solid 2px #c0c0c0;
   margin: unset;
-  padding: auto;
 }
 
 .checkTask {
@@ -33,6 +32,7 @@ input {
   background: none;
   color: grey;
 }
+
 #toDoBlock {
   background-color: white;
   box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
@@ -42,9 +42,9 @@ input {
 #delAll {
   text-align: center;
   background-color: #f8f8f8;
-  margin: unset ;
+  margin: unset;
   color: #808080;
-  padding-inline-start: 20% ;
+  padding-inline-start: 20%;
 }
 
 ul {
@@ -53,6 +53,6 @@ ul {
 }
 
 span {
-  width:100%;
+  width: 100%;
   padding-left: 10%;
 }
