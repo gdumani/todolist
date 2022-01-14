@@ -2,7 +2,7 @@
 
 # TODO LIST
 
-> "TODO List is simple task organizer written in javascript.
+> "TODO List is simple task organizer written in javascript and using Webpack.
 
 ![screenshot](./app_screenshot.png)
 
@@ -11,33 +11,40 @@
 
 - Html/CSS
 - Javascript
-- Webpacks
+- Webpack
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- Webpack setup
+- linters: Eslint,, Stylint, Hint
 ### Setup
-
-### Install
-
+```bash
+git clone https://github.com/gdumani/todolist/tree/development
+```
+### Install Dependencies
+```bash
+npm install
+```
 ### Usage
-
+```bash
+npm run start
+```
 ### Run tests
 
-### Deployment
+```bash
+npx stylelint "**/*.{css,scss}"
+```
 
+```bash
+npx hint --telemetry=off .
+```
 
 
 ## Authors
