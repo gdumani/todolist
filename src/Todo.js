@@ -5,22 +5,25 @@ export default class Todo {
     : JSON.parse(localStorage.getItem('list'));
   }
 
-  populate () {
-    this.list = [
-      
-    ]
-  }
 
   addItem() {
 
   }
 
+  editItem(){
+
+  }
+
+  markItem(){
+
+  }
+  
   remove() {
 
   }
 
   move()  {
-    
+
   }
 
   display() {
