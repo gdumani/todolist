@@ -19,7 +19,7 @@ newT.addEventListener('keypress',(ev) => {
     list.push(task);
     newT.value = '';
     storeList(list);
-    diplayList(list);
+    displayList(list);
   }
 });
 displayList(list);
