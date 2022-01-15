@@ -26,6 +26,9 @@ input {
 .checkTask {
   width: auto;
 }
+.editClass{
+  padding-left: 1em;
+}
 
 .delTask {
   border: none;
