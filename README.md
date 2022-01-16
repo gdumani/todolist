@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps.
 ```bash
 git clone https://github.com/gdumani/todolist.git
 cd todolist
-git checkout dev-crud
+git checkout dev-dynamic
 ```
 ### Install Dependencies
 ```bash
