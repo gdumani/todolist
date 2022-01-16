@@ -1,4 +1,4 @@
-import storeList from "./storelist";
+import storeList from './storelist.js';
 
 const displayList = (l) => {
   const allLi = document.getElementById('list');
@@ -28,7 +28,12 @@ const displayList = (l) => {
     const delButton = document.createElement('button');
     delButton.className = 'delTask';
     delButton.innerHTML = '<i class="fa fa-ellipsis-v" aria-hidden="true">';
-
+    delButton.addEventListener('click', () => {
+      l.splice(el.index, 1);
+      l.forEach((e) => { e.index = l.indexOf(e); });
+      storeList(l);
+      displayList(l);
+    });
     liHtml.appendChild(checkBox);
     liHtml.appendChild(description);
     liHtml.appendChild(delButton);
