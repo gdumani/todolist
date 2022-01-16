@@ -6,17 +6,10 @@ const displayList = (l) => {
   l.forEach((el) => {
     const liHtml = document.createElement('li');
     liHtml.className = 'listLine';
-    const checkBox = document.createElement('input');
-    checkBox.type = 'checkBox';
-    checkBox.className = 'checkTask';
-    checkBox.checked = el.completed;
-    checkBox.addEventListener('change', () => {
-      el.completed = !el.completed;
-      storeList(l);
-    });
     const description = document.createElement('input');
     description.type = 'text';
     description.className = 'editClass';
+    if (el.completed) {description.classList.add('strike')}
     description.value = el.description;
     description.addEventListener('keypress', (k) => {
       if (k.key === 'Enter' && k.value !== '') {
@@ -25,6 +18,18 @@ const displayList = (l) => {
         storeList(l);
       }
     });
+    const checkBox = document.createElement('input');
+    checkBox.type = 'checkBox';
+    checkBox.className = 'checkTask';
+    checkBox.checked = el.completed;
+    checkBox.addEventListener('change', () => {
+      el.completed = !el.completed;
+      if (el.completed) {
+        description.classList.add('strike');
+      } else { description.classList.remove('strike'); }
+      storeList(l);
+    });
+
     const delButton = document.createElement('button');
     delButton.className = 'delTask';
     delButton.innerHTML = '<i class="fa fa-ellipsis-v" aria-hidden="true">';
