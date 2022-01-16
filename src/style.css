@@ -14,6 +14,10 @@ input {
   width: 94%;
 }
 
+.strike {
+  text-decoration-line: line-through;
+}
+
 .listLine {
   display: flex;
   flex-direction: row;
@@ -25,6 +29,10 @@ input {
 
 .checkTask {
   width: auto;
+}
+
+.editClass {
+  padding-left: 1em;
 }
 
 .delTask {
@@ -39,7 +47,7 @@ input {
   margin: 5%;
 }
 
-#delAll {
+.delCompleted {
   text-align: center;
   background-color: #f8f8f8;
   margin: unset;

@@ -1,22 +1,25 @@
 import './style.css';
+import displayList from './displaylist.js';
+import getList from './getlist.js';
+import storeList from './storelist.js';
+import Task from './task.js';
+import remCompleted from './remcompleted.js';
 
-const testList = [
-  { task: 'Do dishes', completed: false, index: 1 },
-  { task: 'Do laundry', completed: false, index: 3 },
-  { task: 'Walk dog', completed: false, index: 2 },
-];
-
-function displayList(l) {
-  const sortList = l.sort((a, b) => a.index - b.index);
-  sortList.forEach((el) => {
-    const liHtml = document.createElement('li');
-    liHtml.innerHTML += `<input type="checkbox" class="checkTask" data-key=${el.index}>
-    <span>${el.task}</span>
-    <button class = 'delTask'><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
-    `;
-    liHtml.className = 'listLine';
-
-    document.getElementById('list').appendChild(liHtml);
-  });
-}
-displayList(testList);
+let list = getList;
+const newT = document.querySelector('#newToDo');
+newT.addEventListener('keypress', (ev) => {
+  if (ev.key === 'Enter' && ev.value !== '') {
+    const task = new Task(newT.value, list.length);
+    list.push(task);
+    newT.value = '';
+    storeList(list);
+    displayList(list);
+  }
+});
+const removeCompleted = document.querySelector('.delCompleted');
+removeCompleted.addEventListener('click', () => {
+  list = remCompleted(list);
+  storeList(list);
+  displayList(list);
+});
+displayList(list);
