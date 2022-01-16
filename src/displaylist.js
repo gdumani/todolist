@@ -9,7 +9,7 @@ const displayList = (l) => {
     const description = document.createElement('input');
     description.type = 'text';
     description.className = 'editClass';
-    if (el.completed) {description.classList.add('strike')}
+    if (el.completed) { description.classList.add('strike'); }
     description.value = el.description;
     description.addEventListener('keypress', (k) => {
       if (k.key === 'Enter' && k.value !== '') {

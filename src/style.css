@@ -17,6 +17,7 @@ input {
 .strike {
   text-decoration-line: line-through;
 }
+
 .listLine {
   display: flex;
   flex-direction: row;
@@ -29,7 +30,8 @@ input {
 .checkTask {
   width: auto;
 }
-.editClass{
+
+.editClass {
   padding-left: 1em;
 }
 

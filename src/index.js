@@ -5,7 +5,6 @@ import storeList from './storelist.js';
 import Task from './task.js';
 import remCompleted from './remcompleted.js';
 
-
 // const testList = [
 //   { task: 'Do dishes', completed: false, index: 1 },
 //   { task: 'Do laundry', completed: false, index: 3 },
@@ -16,7 +15,7 @@ let list = getList;
 const newT = document.querySelector('#newToDo');
 newT.addEventListener('keypress', (ev) => {
   if (ev.key === 'Enter' && ev.value !== '') {
-    const task = new Task(newT.value, list.length)
+    const task = new Task(newT.value, list.length);
     list.push(task);
     newT.value = '';
     storeList(list);
