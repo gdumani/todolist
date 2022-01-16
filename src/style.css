@@ -45,7 +45,7 @@ input {
   margin: 5%;
 }
 
-#delAll {
+#delCompleted {
   text-align: center;
   background-color: #f8f8f8;
   margin: unset;
