@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://gdumani.github.io/todolist/dist/index.html)
 
 
 
@@ -28,11 +28,14 @@ To get a local copy up and running follow these simple example steps.
 ```bash
 git clone https://github.com/gdumani/todolist.git
 cd todolist
-git checkout dev-dynamic
 ```
 ### Install Dependencies
 ```bash
 npm install
+```
+### Recompile code
+```bash
+npm run build
 ```
 ### Usage
 ```bash
